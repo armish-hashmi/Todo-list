@@ -26,7 +26,7 @@ function App() {
     <div className="page">
       <div className="card">
         <div className="card-header">
-          <h1>Today's List</h1>
+          <h1>To-Do List</h1>
           <span className="count">{remaining} left</span>
         </div>
 
@@ -40,7 +40,7 @@ function App() {
         </form>
 
         {tasks.length === 0 ? (
-          <p className="empty">Add your first task.</p>
+          <p className="empty">No tasks here</p>
         ) : (
           <ul className="list">
             {tasks.map((task) => (
