@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #EEF2F6;
+  font-family: 'Inter', sans-serif;
+  color: #20263B;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.card {
+  width: 100%;
+  max-width: 420px;
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 10px 30px rgba(32, 38, 59, 0.08);
+}
+
+.card-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.card-header h1 {
+  font-family: 'Fraunces', serif;
+  font-size: 28px;
+  margin: 0;
+}
+
+.count {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: #6B9080;
+  background: #E7F0EA;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.add-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.add-row input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #DCE3EC;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+}
+
+.add-row input:focus {
+  outline: 2px solid #F2A93B;
+  outline-offset: 1px;
+}
+
+.add-row button {
+  background: #20263B;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.add-row button:hover {
+  background: #33405C;
+}
+
+.empty {
+  color: #9AA3B2;
+  font-size: 14px;
+  text-align: center;
+  padding: 24px 0;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 0;
+  border-bottom: 1px dashed #E1E6ED;
+}
+
+.list li:last-child {
+  border-bottom: none;
+}
+
+.check {
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
+  border-radius: 50%;
+  border: 2px solid #F2A93B;
+  background: transparent;
+  color: #F2A93B;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.15s ease;
+}
+
+.check:hover {
+  transform: scale(1.1);
+}
+
+.text {
+  flex: 1;
+  font-size: 15px;
+}
+
+.done .text {
+  color: #9AA3B2;
+  text-decoration: line-through;
+}
+
+.done .check {
+  background: #F2A93B;
+  color: white;
+}
+
+.delete {
+  background: none;
+  border: none;
+  color: #C7CDD8;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.delete:hover {
+  color: #E0574B;
+}
